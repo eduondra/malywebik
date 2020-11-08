@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Contact Me</h1>
+  <form>
+    <label for="aname">Jméno</label>
+    <input type="text" [(ngModel)]="name"  id="aname" name="jméno" placeholder="Vaše jméno">
+
+    <label for="bname">Příjmení</label>
+    <input type="text"  [(ngModel)]="lastname" id="bname" name="příjmení" placeholder="Vaše příjmení">
+
+    <label for="cname">Dotaz</label>
+    <input type="text" [(ngModel)]="Dotaz" id="cname" placeholder="Váš dotaz" >
+
+
+    <input type="submit" (click)="submit(name, lastname, subject)" value="Poslat">
+  </form>
+</div>
+
