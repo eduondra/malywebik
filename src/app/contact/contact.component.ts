@@ -12,6 +12,7 @@ export class ContactComponent implements OnInit {
   name = '';
   lastname = '';
   subject = '';
+  Dotaz = '';
 
 
   submit(name: string, lastname: string, subject: string) {

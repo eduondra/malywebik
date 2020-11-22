@@ -1,21 +1,6 @@
-<div>
+<app-sidebar  *ngIf="rolled"></app-sidebar>
+<app-header (toggleSidebar)="rolled = !rolled"></app-header>
 
-</div>
-
-<div class="navBar">
-  <a routerLink="/home">Home</a>
-  <a routerLink="/about">About</a>
-  <a routerLink="/contact">Contact</a>
-  <div class="container-search">
-    <input [(ngModel)]="search" (keydown.arrowDown)="filteredOptions + 1" placeholder="Search for components">
-  </div>
-
-</div>
-<div class="options">
-  <div class="options-title-box" *ngFor="let option of filteredOptions;" [routerLink]="option.path">
-    {{option.title}}
-  </div>
-</div>
 
 <router-outlet></router-outlet>
 <footer class="footer">
