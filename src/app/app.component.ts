@@ -43,9 +43,6 @@ toggleOptions() {
 
 }
 
-
-
-
 class SearchOption {
   title: string;
   path: string;

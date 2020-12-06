@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
+import { UserCreateComponent } from './user-create/user-create.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,11 @@ import { HeaderComponent } from './header/header.component';
     AboutComponent,
     ContactComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    UserCreateComponent,
+    UserDetailComponent,
+    UserComponent,
+
   ],
   imports: [
     BrowserModule,
