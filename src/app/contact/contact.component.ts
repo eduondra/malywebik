@@ -12,13 +12,13 @@ export class ContactComponent implements OnInit {
   name = '';
   lastname = '';
   subject = '';
-  Dotaz = '';
 
 
   submit(name: string, lastname: string, subject: string) {
-    console.log(name);
-    console.log(lastname);
-    console.log(subject);
+    console.log(this.name);
+    console.log(this.lastname);
+    console.log(this.subject);
+
 
 
   }

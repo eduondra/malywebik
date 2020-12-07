@@ -8,10 +8,11 @@
     <input type="text"  [(ngModel)]="lastname" id="bname" name="příjmení" placeholder="Vaše příjmení">
 
     <label for="cname">Dotaz</label>
-    <input type="text" [(ngModel)]="subject" id="cname" placeholder="Váš dotaz" >
+    <input type="text" [(ngModel)]="subject" id="cname" name="Váš dotaz" placeholder="Váš dotaz" >
 
 
-    <input type="submit" (click)="submit(name, lastname, subject)" value="Poslat">
+    <input type="submit" name="username" (click)="submit(name, lastname, subject)" value="Poslat">
   </form>
 </div>
+
 
