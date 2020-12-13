@@ -35,4 +35,18 @@ export class UserserviceService {
     return of(this.users.find(u => u.id === id));
 
   }
+
+  edit(id: number, username: string): Observable<IUsersEntity> {
+    for(const u of this.users) {
+      if (u.id === id) {
+        u.username = username
+        return of(u);
+      }
+    }
+    return of(null);
+
+  }
 }
+
+
+

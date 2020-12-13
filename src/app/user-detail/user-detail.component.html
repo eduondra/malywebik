@@ -1,1 +1,5 @@
 <p>{{user?.username}}</p>
+<form (ngSubmit)="edit()">
+<input name="username" [(ngModel)]="username">
+  <button class="btn btn-primary">Button</button>
+</form>
