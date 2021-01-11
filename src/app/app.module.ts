@@ -11,20 +11,23 @@ import { HeaderComponent } from './header/header.component';
 import { UserCreateComponent } from './user-create/user-create.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserComponent } from './user/user.component';
+import {ExceptPipe, ExcerptPipe} from './except.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutComponent,
-    ContactComponent,
-    SidebarComponent,
-    HeaderComponent,
-    UserCreateComponent,
-    UserDetailComponent,
-    UserComponent,
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        AboutComponent,
+        ContactComponent,
+        SidebarComponent,
+        HeaderComponent,
+        UserCreateComponent,
+        UserDetailComponent,
+        UserComponent,
+        ExceptPipe,
+        ExcerptPipe,
 
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
